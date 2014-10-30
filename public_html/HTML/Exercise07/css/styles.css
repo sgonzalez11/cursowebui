@@ -1,0 +1,49 @@
+#flag {
+    font-size: 13px;
+    font-family: Arial;
+    border: 1px #cccccc solid;
+    border-spacing: 0;
+    position: relative;
+}
+#content-inner {
+    margin: auto;
+    width: 410px;
+}
+th {
+    background: #54b706;
+    padding: 10px;  
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: left;
+    border-bottom: 1px #cccccc solid;
+}
+td {
+    padding: 5px 10px;
+    position: relative;
+}
+.even {
+    background: #ececd8;
+}
+.border-side {
+   border-right: 1px #bbb99d solid; 
+}
+.flag {
+    padding-left: 43px;
+}
+span.flag-uk, span.flag-mexico, span.flag-germany {
+    display: block;
+    width: 21px;
+    height: 15px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+span.flag-uk {
+    background: url('../images/uk.png') no-repeat center;
+}
+span.flag-mexico {
+    background: url('../images/mx.png') no-repeat center;
+}
+span.flag-germany {
+    background: url('../images/gr.png') no-repeat center;
+}

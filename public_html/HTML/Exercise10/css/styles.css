@@ -1,0 +1,68 @@
+#box {
+    background: #3b3b3b;
+    width: 660px;
+    height: 295px;
+    color: #9f9f9f;
+}
+#login {
+    color: #FFF;
+    height: 67px;
+    width: 660px;
+    background: url('../images/background-form.png') repeat-x;
+    position: relative;
+}
+#box p {
+ padding: 10px 10px 0 10px;   
+ margin: 0px;
+    
+}
+#login p {
+    float: left;
+    margin: 16px 10px 0 65px;
+    font-size: 22px;
+    padding: 0px;
+}
+h2 {
+    color: #fed517;
+    margin: 10px 0 0 10px;
+    padding: 10px 0 0 0;
+    font-size: 28px;
+}
+#user-name, #email {
+    float: left;
+    margin: 20px 10px 0 10px;
+}
+#submit {
+    float: left;
+    margin: 16px 20px 0 15px;
+    background: url('../images/button-go.png') no-repeat;
+    width: 56px;
+    height: 28px;
+    border: none;
+    text-indent: -9999px;    
+}
+.pc {
+    width: 43px;
+    height: 52px;
+    display: block;
+    background: url('../images/pc.png') no-repeat;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+.quote {
+    color: #FFFFFF;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

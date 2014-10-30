@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : seb
+*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
+#content-inner {
+    background: #eeeeee;
+    width: 500px;
+    padding-bottom: 5px;
+    border: 1px #000 solid;
+}
+#article {
+    font-family: Arial;
+    font-size: 14px;
+    border: 1px #999999 solid;
+    background: #FFF;
+    width: 390px;
+    padding: 30px 25px 30px 25px ;
+    margin: 0 0 30px 20px;
+}
+.image {
+    float: left;
+    margin-right: 20px;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 235px;    
+}
+img {
+    border: 1px #9b999a solid;
+}
+.button {
+    height: 25px;
+    text-indent: -9999px;
+    border: none;
+    float: right;
+    padding: 0px;
+    margin: 15px 2px 0px 2px;
+}
+.listen {
+    background: url('../images/button1.png') no-repeat;
+    width: 73px;
+}
+.add {
+    background: url('../images/button2.png') no-repeat;
+    width: 60px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+.bold {
+    font-weight: bold;
+}
+h1 {
+    padding: 20px 0 0 0;
+    margin: 0 0 30px 20px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: normal;
+}

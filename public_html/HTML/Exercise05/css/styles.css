@@ -1,0 +1,55 @@
+#table-sample-form {
+    font-family: Arial;
+    font-size: 14px; 
+}
+.first {
+    width: 230px;
+}
+.second {
+    width: 340px;    
+}
+.right-text {
+    text-align: right;
+}
+.input-single {
+    width: 250px;
+}
+.input-address, .input-comments {
+    width: 300px;
+}
+.input-international-code, .input-country-code {
+    width: 50px;
+}
+.input-zip-code {
+    width: 125px
+}
+.input-phone {
+    width: 160px;
+}
+.input-day {
+    width: 20px;
+}
+.input-month {
+    width: 20px;
+}
+.input-year {
+    width: 35px;
+}
+.input-city {
+    width: 185px;
+    margin-right: 40px;
+}
+.input-state {
+    width: 40px;
+}
+.last-row {
+    background: #aae5e5;
+}
+.input-submit {
+    margin: auto;
+    margin-left: 35%;
+}
+.input-submit, .input-reset {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

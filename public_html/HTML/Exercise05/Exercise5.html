@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercise 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <form name="sample-form" action="/sample" method="POST">
+            <table border="1" cellspacing="3" cellpadding="2" id="table-sample-form">
+                <tbody>
+                    <tr>
+                        <td class="first right-text"><strong>Last Name</strong></td>
+                        <td class="second"><input type="text" name="last-name" value="" class="input-single" /> </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>First Name</strong></td>
+                        <td class="second"><input type="text" name="first-name" value="" class="input-single" /> </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Address</strong></td>
+                        <td class="second"><textarea cols="15" rows="6" name="address" class="input-address"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>City</strong></td>
+                        <td class="second">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" name="city" value="" class="input-city" /> </td>
+                                        <td><strong>State</strong>  <input type="text" name="state" value="" class="input-state" /> </td>
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Zip/Postal Code</strong></td>
+                        <td class="second"> <input type="text" name="zip-code" value="" class="input-zip-code" />  </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Country</strong></td>
+                        <td class="second">
+                            <select name="country">
+                                <option value="argentina">Argentina</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="chile">Chile</option>
+                                <option value="paraguay">Paraguay</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Phone (country code, area code, number)</strong></td>
+                        <td class="second"> 
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td>(+<input type="text" name="international-code" value="" class="input-international-code" /> ) </td>
+                                        <td><input type="text" name="country-code" value="" class="input-country-code" /> -   </td>
+                                        <td><input type="text" name="phone" value="" class="input-phone" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>E-mail</strong></td>
+                        <td class="second"><input type="text" name="email" value="" class="input-single" /></td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Birth date</strong></td>
+                        <td class="second">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td>Month <input type="text" name="birth-month" value="" class="input-month" /></td>
+                                        <td>Day <input type="text" name="birth-day" value="" class="input-day" /></td>
+                                        <td>Year (4 digit) <input type="text" name="birth-year" value="" class="input-year" maxlength="4" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Gender</strong></td>
+                        <td class="second">
+                            <select name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Starting date</strong></td>
+                        <td class="second">
+                            Spring 2014<input type="radio" name="starting-date" value="" /> 
+                            Summer 2014<input type="radio" name="starting-date" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first right-text"><strong>Comments/Questions</strong></td>
+                        <td class="second"><textarea cols="15" rows="6" name="comments" class="input-comments"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="last-row">
+                            <input type="submit" value="Submit" class="input-submit" />
+                            <input type="reset" value="Clear this form" class="input-reset" />                           
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </form>
+    </body>
+</html>
