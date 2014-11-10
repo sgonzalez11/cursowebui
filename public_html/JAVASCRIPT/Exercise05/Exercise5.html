@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Write an expression that checks if given positive integer number n (n ≤ 100)
+is prime. E.g. 37 is prime.
+-->
+<html>
+    <head>
+        <title>Exercise 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">                          
+        function check() {
+            var n = document.getElementById('num').value;
+            if (isPrime(n)){
+               alert("Es Numero: "+n+" es Primo"); 
+            } else {
+               alert("Es Numero: "+n+" NO es Primo"); 
+            }
+        }
+
+        function isPrime(n) {
+            if (isNaN(n) || !isFinite(n) || n%1 || n<2) return false; 
+            
+            if (n%2==0) return (n==2);
+            
+            var m=Math.sqrt(n);
+            for (var i=3;i<=m;i+=2) {
+                if (n%i==0) return false;
+            }
+            
+            return true;
+        }            
+        </script>
+    </head>
+    <body>
+        Numero: <input type="text" name="num" value="" id="num" />
+        <input type="button" value="Check Number" onclick="check();" />
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Write an expression that calculates rectangle’s area by given width and height.
+-->
+<html>
+    <head>
+        <title>Exercise 3 - Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+        #rectangulo { 
+            background-color: #000000;
+            margin-top: 50px;
+        }
+        </style>
+        <script type="text/javascript">
+        function calculateRectangle() {
+            var base = document.getElementById("base").value;
+            var altura = document.getElementById("altura").value;
+            var area = base*altura;
+            alert("El area del rectangulo es " + area);
+            document.getElementById('rectangulo').style.width=base+"px";
+            document.getElementById('rectangulo').style.height=altura+"px";
+        }
+        </script>
+    </head>
+
+    <body>
+        Base: <input type="text" name="base" value="" id="base" />
+        Altura: <input type="text" name="altura" value="" id="altura" />
+        <input type="button" value="Calcular" name="submit" onclick="calculateRectangle();" />
+        <div id="rectangulo"></div>
+    </body>
+</html>

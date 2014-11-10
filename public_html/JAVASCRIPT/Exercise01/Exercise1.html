@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Write an expression that checks if given integer is odd or even.
+-->
+<html>
+    <head>
+        <title>Exercise 1 - Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        function validateNumber() {
+            var valor = document.getElementById("number").value;
+            if (!isNaN(valor)) {
+                (valor%2 == 0) ? alert("Es Entero y Par"):alert("Es Entero e Impar");
+            } else {
+                alert("No es un Integer: " + valor);
+            }  
+        }
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="text" name="number" value="" id="number" />
+            <input type="submit" value="Submit" name="Submit" onclick="validateNumber();" />
+        </div>
+    </body>
+</html>

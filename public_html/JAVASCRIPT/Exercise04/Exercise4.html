@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Write an expression that checks for given integer if its third digit 
+(right-to-left) is 7. E. g. 1732 true.
+-->
+<html>
+    <head>
+        <title>Exercise 4 - Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        function checkString() {
+            var strings = document.getElementById("field").value;
+            var largo = strings.length-3;
+            if (largo >= 0) {
+                var res = strings.charAt(strings.length-3);
+                alert("El caracter que esta en la posicion 3 empezando desde RTL es: " + res);
+            } else {
+                alert("El numero ingresado tiene menos de 3 digitos");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="text" value="" id="field" />
+        <input type="button" name="check" value="Check" onclick="checkString();" />
+    </body>
+</html>

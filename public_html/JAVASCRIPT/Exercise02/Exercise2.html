@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Write a boolean expression that checks for given integer if it can be divided
+(without remainder) by 7 and 5 in the same time. 
+-->
+<html>
+    <head>
+        <title>Exercise 2 - Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        function checkNumber() {
+            var numero = document.getElementById('number').value;
+            if (numero%5 === 0 && numero%7 === 0) {
+                alert("El numero es divisible por 5 y 7");
+            } else {
+                alert("El numero NO es divisible por 5 y 7");               
+            }
+        }
+        </script>
+    <body>
+        Numero a Comprobar: <input type="text" name="number" value="" id="number" />
+        <input type="button" value="Submit" name="submit" onclick="checkNumber();" />
+    </body>
+</html>
