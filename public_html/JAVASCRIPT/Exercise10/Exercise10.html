@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Write script that asks for a digit and depending on the input shows the name of
+that digit using a switch statement.
+-->
+<html>
+    <head>
+        <title>Exercise 10</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function caseExample() {
+                var n1 = document.getElementById('num1').value;
+                switch (n1) {
+                    case '1':
+                        alert('One');
+                        break;
+                    case '2':
+                        alert('Two');
+                        break;
+                    case '3':
+                        alert('Three');
+                        break;
+                    case '4':
+                        alert('Four');
+                        break;
+                    case '5':
+                        alert('Five');
+                        break;
+                    case '6':
+                        alert('Six');
+                        break;
+                    case '7':
+                        alert('Seven');
+                        break;
+                    case '8':
+                        alert('Eight');
+                        break;
+                    case '9':
+                        alert('Nine');
+                        break;
+                    default :
+                        alert("No es un numero");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        Numero: <input type="text" name="num1" value="" id="num1" />
+        <input type="button" value="Check Number" onclick="caseExample();" />
+    </body>
+</html>

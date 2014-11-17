@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Write a script that shows the sign (+ or -) of the product of three real 
+numbers without calculating it. Use a sequence of if statements.
+-->
+<html>
+    <head>
+        <title>Exercise 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function checkSign() {
+
+                var n1 = document.getElementById('num1').value;
+                var n2 = document.getElementById('num2').value;
+                var n3 = document.getElementById('num3').value;
+
+                if (!isNaN(n1) && !isNaN(n2) && !isNaN(n3)) {
+
+                    if (n1 < 0 && n2 > 0 && n3 > 0) {
+                        alert("El producto de estos numeros es Negativo (-)");
+                    } else if (n1 > 0 && n2 < 0 && n3 > 0) {
+                        alert("El producto de estos numeros es Negativo (-)");
+                    } else if (n1 > 0 && n2 > 0 && n3 < 0) {
+                        alert("El producto de estos numeros es Negativo (-)");
+                    } else if (n1 == 0 || n2 == 0 || n3 == 0) {
+                        alert("El producto de estos numeros es 0");
+                    } else {
+                        alert("El producto de estos numeros es Positivo (+)");
+                    }
+
+                } else {
+                    alert("Alguno de los datos ingresados No son numeros");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Numero 1: <input type="text" name="num1" value="" id="num1" />
+        Numero 2: <input type="text" name="num2" value="" id="num2" />
+        Numero 3: <input type="text" name="num3" value="" id="num3" />
+        <input type="button" value="Check Number" onclick="checkSign();" />
+    </body>
+</html>

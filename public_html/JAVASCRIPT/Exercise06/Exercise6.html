@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Write an if statement that examines two integer variables and exchanges their 
+values if the first one is greater than the second one.
+-->
+<html>
+    <head>
+        <title>Exercise 6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function checkInteger() {
+                
+                var n1 = document.getElementById('num1').value;
+                var n2 = document.getElementById('num2').value;
+                var aux = "";
+                
+                if (!isNaN(n1) && !isNaN(n2)){
+                    if (n1 > n2) {
+                        aux = n2;
+                        n2 = n1;
+                        n1 = aux;
+                        alert("El valor del numero 1 es mayor que el Numero 2");
+                        alert("El valor del numero 1 ahora es: "+ n1);
+                        alert("El valor del numero 2 ahora es: "+ n2);
+                    } else if (n1 < n2) {
+                        alert("El Numero 2 es mayor que el Numero 1");
+                    } else {
+                        alert("Los Numeros son iguales");
+                    }                    
+                } else { 
+                    alert("No son numeros");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Numero 1: <input type="text" name="num1" value="" id="num1" />
+        Numero 2: <input type="text" name="num2" value="" id="num2" />
+        <input type="button" value="Check Number" onclick="checkInteger();" />
+    </body>
+</html>
